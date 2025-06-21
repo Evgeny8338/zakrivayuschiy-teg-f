@@ -2,7 +2,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
   --font: "Inter-Variable";
-  --font-accent: "PressStart2P-Regular";
+  --font-accent: "PressStart2P";
   --main-font-size: 1.125rem;
   --accent-font-size: 0.875rem;
   --floppy-size: 21px;
@@ -38,6 +38,10 @@
 
     .header__container {
       padding-block: clamp(115px, 15vw, 130px) 125px;
+    }
+
+    .modal[open] {
+      column-gap: clamp(20px, 2vw, 20px);
     }
   }
 }
